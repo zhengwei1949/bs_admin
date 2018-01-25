@@ -1,0 +1,130 @@
+body{
+    padding-top:50px;
+}
+.sm-menu{
+    background:#000;
+}
+.sm-menu a{
+    color: #fff;
+}
+.logo{
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background:#222;
+}
+.top-nav{
+    background:#222;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+}
+.top-nav span{
+    cursor: pointer;
+}
+.logo a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.about{
+    color: #fff;
+    background:#222;
+}
+
+.about span{
+    cursor: pointer;
+}
+.menu{
+    position: fixed;
+    height:calc(100% - 50px);
+    background:#222d32;
+}
+.menu .user{
+    margin-top:10px;
+}
+.menu .user img{
+    width:50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.menu .user{
+    color: #fff;
+}
+.main{
+    height:1400px;
+    background:#fff;
+}
+.breadcrumb{
+    margin-top:20px;
+}
+.navbar{
+    border:none;
+    margin-bottom: 0;
+}
+
+/*这块的代码是用工具直接生成的代码*/
+.tftable {
+    font-size: 12px;
+    color: #333333;
+    width: 100%;
+    border-width: 1px;
+    border-color: #729ea5;
+    border-collapse: collapse;
+}
+
+.tftable th {
+    font-size: 12px;
+    background-color: #acc8cc;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #729ea5;
+    text-align: left;
+}
+
+.tftable tr {
+    background-color: #d4e3e5;
+}
+
+.tftable td {
+    font-size: 12px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #729ea5;
+}
+
+.tftable tr:hover {
+    background-color: #ffffff;
+}
+
+
+.echart{
+    height:400px;
+    background:pink;
+    border:1px solid #eee;
+    padding:4px;
+}
+#nav{
+    background: #000;
+}
+#nav li{
+    padding:10px 0;
+    background:#000;
+}
+#nav li a{
+    color: #fff;
+}
+
+.nav-left{
+    background: #000;
+    position: fixed;
+    left:0;
+    top:0;
+    bottom: 0;
+}
+#l-map{
+    height: 600px;
+}

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/select2/select2.min.css">
+    <link rel="stylesheet" href="./assets/icheck/skins/square/yellow.css">
+    <link rel="stylesheet" href="./assets/bootstrap-switch/css/bootstrap3/bootstrap-switch.css">
+    <link rel="stylesheet" href="./assets/jstree/themes/default/style.css">
+    <link rel="stylesheet" href="./assets/bootstrap_datetimepicker/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=A73ZhQisT8GQG0FsrfolZRPZBxXHIPSu"></script>
+</head>
+<body>
+    <header class="container-fluid navbar-fixed-top">
+        <div class="row">
+            <div class="col-lg-2 logo"><a href="javascript:;">响应式后台界面</a></div>
+            <div class="col-lg-10 top-nav clearfix">
+                <div class="pull-left hidden-lg">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </div>
+                <div class="pull-right">
+                    <span class="glyphicon glyphicon-log-out"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row sm-menu" style="display: none;">
+            <ol>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Library</a>
+                </li>
+                <li>
+                    <a href="#">Data</a>
+                </li>
+            </ol>
+        </div>
+    </header>
+    <div class="container-fluid wrapper">
+        <div class="row">
+            <div class="col-lg-2 hidden-md hidden-xs nav-left">
+                <div id="nav">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>          
+            <div class="col-lg-10 col-lg-offset-2 main">
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li class="active">Data</li>
+                </ol>
+                
+                <!--bootstrap常见东西-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">bootstrap常见东西的使用
+                                </div>
+                                <div class="panel-body">
+                                    <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                    <p class="text-primary">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                    <p class="text-success">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                    <p class="text-info">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                    <p class="text-warning">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                    <p class="text-danger">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                    <p class="bg-primary">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                    <p class="bg-success">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                    <p class="bg-info">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                    <p class="bg-warning">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                    <p class="bg-danger">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <span class="caret"></span>
+                                    <div class="clearfix">
+                                        <div class="pull-left">左浮动</div>
+                                        <div class="pull-right">右浮动</div>
+                                    </div>
+                                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+                                    
+                                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+                                    
+                                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+                                    
+                                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+
+                                    <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+                                        Loading state
+                                    </button>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                        Launch demo modal
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h4 class="modal-title" id="myModalLabel">标题</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    这里是内容区域
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+
+                <!--基本表格的绘制-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">基本表格的使用
+                                    <a href="https://www.textfixer.com/html/html-table-generator.php" target="_blank">官网</a>
+                                </div>
+                                <div class="panel-body">
+                                    <table class="tftable" border="1">
+                                        <tr>
+                                            <th>Header 1</th>
+                                            <th>Header 2</th>
+                                            <th>Header 3</th>
+                                            <th>Header 4</th>
+                                            <th>Header 5</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Row:1 Cell:1</td>
+                                            <td>Row:1 Cell:2</td>
+                                            <td>Row:1 Cell:3</td>
+                                            <td>Row:1 Cell:4</td>
+                                            <td>Row:1 Cell:5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Row:2 Cell:1</td>
+                                            <td>Row:2 Cell:2</td>
+                                            <td>Row:2 Cell:3</td>
+                                            <td>Row:2 Cell:4</td>
+                                            <td>Row:2 Cell:5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Row:3 Cell:1</td>
+                                            <td>Row:3 Cell:2</td>
+                                            <td>Row:3 Cell:3</td>
+                                            <td>Row:3 Cell:4</td>
+                                            <td>Row:3 Cell:5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Row:4 Cell:1</td>
+                                            <td>Row:4 Cell:2</td>
+                                            <td>Row:4 Cell:3</td>
+                                            <td>Row:4 Cell:4</td>
+                                            <td>Row:4 Cell:5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Row:5 Cell:1</td>
+                                            <td>Row:5 Cell:2</td>
+                                            <td>Row:5 Cell:3</td>
+                                            <td>Row:5 Cell:4</td>
+                                            <td>Row:5 Cell:5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Row:6 Cell:1</td>
+                                            <td>Row:6 Cell:2</td>
+                                            <td>Row:6 Cell:3</td>
+                                            <td>Row:6 Cell:4</td>
+                                            <td>Row:6 Cell:5</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                <!--echarts-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">echarts的使用
+                                    <a href="https://echarts.baidu.com/" target="_blank">官网</a>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-lg-6 echart" id="left"></div>
+                                    <div class="col-lg-6 echart" id="right"></div>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                <!--select2-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">select2的使用 <a href="https://select2.org/getting-started/basic-usage" target="_blank">官网</a></div>
+                                <div class="panel-body">
+                                    <select class="js-example-basic-single" name="state" style="width:100%;">
+                                        <option value="AL">Alabama</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--icheck的使用-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">icheck的使用
+                                    <a href="http://www.bootcss.com/p/icheck/" target="_blank">官网</a>
+                                </div>
+                                <div class="panel-body icheck">
+                                    <input type="checkbox">
+                                    <input type="checkbox" checked>
+                                    <input type="radio" name="iCheck">
+                                    <input type="radio" name="iCheck" checked>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+
+                <!--switch的使用-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">switch的使用
+                                    <a href="http://www.bootcss.com/p/bootstrap-switch/" target="_blank">官网</a>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="switch" data-on="primary" data-off="info">
+                                        <input type="checkbox" checked />
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+
+                <!--jstree的使用-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">jstree的使用
+                                    <a href="https://www.jstree.com" target="_blank">官网</a>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="jstree_demo"></div>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+
+                <!--百度地图的使用-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">百度地图的使用
+                                </div>
+                                <div class="panel-body">
+                                    <div id="l-map"></div>
+                                    <div id="driving_way">
+                                        <select>
+                                            <option value="0">最少时间</option>
+                                            <option value="1">最少换乘</option>
+                                            <option value="2">最少步行</option>
+                                            <option value="3">不乘地铁</option>
+                                        </select>
+                                        <input type="button" id="result" value="查询" />
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--datepicker的使用-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">datepicker的使用
+                                    <a href="http://www.bootcss.com/p/bootstrap-datetimepicker/" target="_blank">官网</a>
+                                </div>
+                                <div class="panel-body">
+                                    <form action="" class="form-horizontal" role="form">
+                                        <fieldset>
+                                            <legend>Test</legend>
+                                            <div class="form-group">
+                                                <label for="dtp_input1" class="col-md-2 control-label">DateTime Picking</label>
+                                                <div class="input-group date form_datetime col-md-5" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p"
+                                                    data-link-field="dtp_input1">
+                                                    <input class="form-control" size="16" type="text" value="" readonly>
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-remove"></span>
+                                                    </span>
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-th"></span>
+                                                    </span>
+                                                </div>
+                                                <input type="hidden" id="dtp_input1" value="" />
+                                                <br/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="dtp_input2" class="col-md-2 control-label">Date Picking</label>
+                                                <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2"
+                                                    data-link-format="yyyy-mm-dd">
+                                                    <input class="form-control" size="16" type="text" value="" readonly>
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-remove"></span>
+                                                    </span>
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                </div>
+                                                <input type="hidden" id="dtp_input2" value="" />
+                                                <br/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="dtp_input3" class="col-md-2 control-label">Time Picking</label>
+                                                <div class="input-group date form_time col-md-5" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
+                                                    <input class="form-control" size="16" type="text" value="" readonly>
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-remove"></span>
+                                                    </span>
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-time"></span>
+                                                    </span>
+                                                </div>
+                                                <input type="hidden" id="dtp_input3" value="" />
+                                                <br/>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+
+                <!--loading图的使用-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">loading图的使用
+                                    <a href="https://boguz.github.io/Spinners/" target="_blank">官网</a>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="switch" data-on="primary" data-off="info">
+                                        <style>
+                                            
+                                            .single5 {
+                                                height: 50px;
+                                                width: 50px;
+                                                background-color: pink;
+                                                -webkit-animation: single5 5s infinite linear;
+                                                animation: single5 5s infinite linear;
+                                            }
+                                            
+                                            @-webkit-keyframes single5 {
+                                                0% { 
+                                                    -webkit-transform: perspective(180px) rotateX(0deg) rotateY(0deg);
+                                                    background-color: #F4D03F;
+                                                }
+                                                25% { 
+                                                    -webkit-transform: perspective(180px) rotateX(-180.1deg) rotateY(0deg);
+                                                    background-color: #52B3D9;
+                                                }
+                                                50% { 
+                                                    -webkit-transform: perspective(180px) rotateX(-180deg) rotateY(179.9deg);
+                                                    background-color: #EC644B;
+                                                }
+                                                75% { 
+                                                    -webkit-transform: perspective(180px) rotateX(-360deg) rotateY(179.9deg);
+                                                    background-color: #68C3A3;
+                                                }
+                                                100% { 
+                                                    -webkit-transform: perspective(180px) rotateX(-360deg) rotateY(360deg);
+                                                    background-color: #F4D03F;
+                                                }
+                                            }
+                                            
+                                            @keyframes single5 {
+                                                0% { 
+                                                    transform: perspective(180px) rotateX(0deg) rotateY(0deg);
+                                                    -webkit-transform: perspective(180px) rotateX(0deg) rotateY(0deg);
+                                                    background-color: #F4D03F;
+                                                }
+                                                25% { 
+                                                    transform: perspective(180px) rotateX(-180.1deg) rotateY(0deg);
+                                                    -webkit-transform: perspective(180px) rotateX(-180.1deg) rotateY(0deg);
+                                                    background-color: #52B3D9;
+                                                }
+                                                50% { 
+                                                    transform: perspective(180px) rotateX(-180deg) rotateY(179.9deg);
+                                                    -webkit-transform: perspective(180px) rotateX(-180deg) rotateY(179.9deg);
+                                                    background-color: #EC644B;
+                                                }
+                                                75% { 
+                                                    transform: perspective(180px) rotateX(-180deg) rotateY(179.9deg);
+                                                    -webkit-transform: perspective(180px) rotateX(-360deg) rotateY(179.9deg);
+                                                    background-color: #68C3A3;
+                                                }
+                                                100% { 
+                                                    transform: perspective(180px) rotateX(0deg) rotateY(360deg);
+                                                    -webkit-transform: perspective(180px) rotateX(-360deg) rotateY(360deg);
+                                                    background-color: #F4D03F;
+                                                }
+                                            }
+                                        </style>
+                                        <div class="single5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/jquery/jquery.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.js"></script>
+    <script src="./assets/select2/select2.min.js"></script>
+    <script src="./assets/echarts/echarts.min.js"></script>
+    <script src="./assets/icheck/icheck.js"></script>
+    <script src="./assets/bootstrap-switch/js/bootstrap-switch.js"></script>
+    <script src="./assets/jstree/jstree.js"></script>
+    <script src="./assets/bootstrap_datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="./assets/bootstrap_datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.js-example-basic-single').select2();
+    });
+    
+    $(document).ready(function () {
+            $('.icheck input').iCheck({
+                checkboxClass: 'icheckbox_square-yellow',
+                radioClass: 'iradio_square-yellow',
+                increaseArea: '20%' // optional
+            });
+        });
+    
+        $(document).ready(function(){
+        $('.switch input').bootstrapSwitch()
+    })
+    
+    $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+    })
+
+     $('#myButton').on('click', function () {
+        var $btn = $(this).button('loading')
+        // business logic...
+        // $btn.button('reset')
+    })
+    
+    $(document).ready(function(){
+        $('.form_datetime').datetimepicker({
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            showMeridian: 1
+        });
+        $('.form_date').datetimepicker({
+            language: 'zh-CN',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+        $('.form_time').datetimepicker({
+            language: 'zh-CN',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 1,
+            minView: 0,
+            maxView: 1,
+            forceParse: 0
+        });
+    })
+
+    
+
+    $(document).ready(function(){
+        $('#jstree_demo').jstree({
+            "core": {
+                "animation": 0,
+                "check_callback": true,
+                "themes": { "stripes": true },
+                'data': {
+                    'url': function (node) {
+                        return node.id === '#' ?
+                            'ajax_demo_roots.json' : 'ajax_demo_children.json';
+                    },
+                    'data': function (node) {
+                        return { 'id': node.id };
+                    }
+                }
+            },
+            "types": {
+                "#": {
+                    "max_children": 1,
+                    "max_depth": 4,
+                    "valid_children": ["root"]
+                },
+                "root": {
+                    "icon": "assets/jstree/images/tree_icon.png",
+                    "valid_children": ["default"]
+                },
+                "default": {
+                    "valid_children": ["default", "file"]
+                },
+                "file": {
+                    "icon": "glyphicon glyphicon-file",
+                    "valid_children": []
+                }
+            },
+            "plugins": [
+                "contextmenu", "dnd", "search",
+                "state", "types", "wholerow"
+            ]
+        });
+    })
+    // 基于准备好的dom，初始化echarts实例
+        var myChart1 = echarts.init(document.getElementById('left'));
+
+        // 指定图表的配置项和数据
+        var option1 = {
+            title: {
+                text: 'ECharts 入门示例'
+            },
+            tooltip: {},
+            legend: {
+                data: ['销量']
+            },
+            xAxis: {
+                data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'line',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart1.setOption(option1);
+
+
+        // 基于准备好的dom，初始化echarts实例
+        var myChart2 = echarts.init(document.getElementById('right'));
+
+        // 指定图表的配置项和数据
+        var option2 = {
+                tooltip: {
+                    formatter: "{a} <br/>{b} : {c}%"
+                },
+                toolbox: {
+                    show: true,
+                    feature: {
+                        mark: {
+                            show: true
+                        },
+                        restore: {
+                            show: true
+                        },
+                        saveAsImage: {
+                            show: true
+                        }
+                    }
+                },
+                series: [
+                    {
+                        name: "业务指标",
+                        type: "gauge",
+                        detail: {
+                            formatter: "{value}%"
+                        },
+                        data: [
+                            {
+                                value: 50,
+                                name: "完成率"
+                            }
+                        ]
+                    }
+                ]
+            }
+        // 使用刚指定的配置项和数据显示图表。
+        myChart2.setOption(option2);
+
+        window.onresize = function () {
+            myChart1.resize()
+            myChart2.resize();
+        }
+
+        $('.glyphicon-align-justify').click(function(){
+            $('.sm-menu').slideToggle()
+        })
+
+        // 百度地图API功能
+            var map = new BMap.Map("l-map");
+            map.centerAndZoom(new BMap.Point(116.404, 39.915), 14);
+
+            var start = "百度大厦";
+            var end = "北京邮电大学西门";
+            var routePolicy = [BMAP_TRANSIT_POLICY_LEAST_TIME, BMAP_TRANSIT_POLICY_LEAST_TRANSFER, BMAP_TRANSIT_POLICY_LEAST_WALKING, BMAP_TRANSIT_POLICY_AVOID_SUBWAYS];
+            var transit = new BMap.TransitRoute(map, {
+                renderOptions: { map: map },
+                policy: 0
+            });
+            $("#result").click(function () {
+                map.clearOverlays();
+                var i = $("#driving_way select").val();
+                search(start, end, routePolicy[i]);
+                function search(start, end, route) {
+                    transit.setPolicy(route);
+                    transit.search(start, end);
+                }
+            });
+    </script>
+</body>
+</html>
